@@ -1,0 +1,29 @@
+{
+  "name": "batch-xml-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "~16"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(p-limit|yocto-queue|@sindresorhus)/)"
+    ]
+  },
+  "dependencies": {
+    "@sindresorhus/chunkify": "^0.2.0",
+    "p-limit": "^4.0.0",
+    "ssh2": "^1.11.0",
+    "xmlbuilder2": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.2.5",
+    "chance": "^1.1.9",
+    "jest": "^29.3.1"
+  }
+}
